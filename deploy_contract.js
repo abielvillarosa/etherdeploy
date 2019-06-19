@@ -8,10 +8,10 @@ let ABI = contractInfo.abiDefinition;
 
 let provider = ethers.getDefaultProvider('ropsten');
 // console.log(provider);
-console.log(process.env.pk);
+// console.log(process.env.pk);
 
 let wallet = new ethers.Wallet(process.env.pk, provider);
-console.log(wallet);
+// console.log(wallet);
 
 //Deploy contract
 let ContractFactory = new ethers.ContractFactory(ABI, bytecode, wallet);
